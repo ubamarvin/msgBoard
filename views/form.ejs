@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>Add a New Message</h1>
+  
+  <form method="POST" action="/new">
+    <label for="messageUser">Your Name:</label>
+    <input type="text" id="messageUser" name="messageUser" required><br>
+    <label for="messageText">Message:</label>
+    <input type="text" id="messageText" name="messageText" required><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <a href="/">Back to Messageboard</a>
+</body>
+</html>
